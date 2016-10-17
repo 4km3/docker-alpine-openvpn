@@ -1,0 +1,17 @@
+persist-key
+persist-local-ip
+persist-remote-ip
+comp-lzo
+user nobody
+group nobody
+auth-nocache
+verb 3
+dev tun
+dh dh.pem
+ifconfig-pool-persist ipp.txt
+keepalive 10 60
+ca ca.crt
+tls-auth ta.key 0
+pkcs12 this_server.p12
+server 10.0.101.0 255.255.255.0
+verb 3
