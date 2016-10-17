@@ -10,4 +10,5 @@ squid:
     - ./openvpn-assets:/etc/openvpn/
   working_dir: /etc/openvpn
   command: --config /etc/openvpn/openvpn.conf
+  net: host
   restart: always
