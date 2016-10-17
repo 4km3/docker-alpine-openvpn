@@ -4,8 +4,9 @@ squid:
     - "1194:1194/udp"
   cap_add:
     - NET_ADMIN
+  devices:
+    - "/dev/net/tun:/dev/net/tun"
   volumes:
-    - /dev/net/tun:/dev/net/tun
     - ./openvpn-assets:/etc/openvpn/
   working_dir: /etc/openvpn
   command: --config /etc/openvpn/openvpn.conf
