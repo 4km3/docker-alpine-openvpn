@@ -1,4 +1,4 @@
-squid:
+openvpn:
   image: 4km3/openvpn:latest
   ports:
     - "1194:1194/udp"
