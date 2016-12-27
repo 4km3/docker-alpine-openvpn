@@ -7,6 +7,5 @@ LABEL Description="OpenVPN"  \
       Version="1.0"
 
 
-FROM alpine:3.4
 RUN apk --no-cache add openvpn
 ENTRYPOINT ["/usr/sbin/openvpn"]
